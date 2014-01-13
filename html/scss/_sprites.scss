@@ -1,0 +1,40 @@
+.sprite {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  @include hidpi(1.5) { 
+    background-image: url(../img/sprite@2x.png);
+    background-size: 375px 375px;
+  }
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  top: 2px;
+  margin-right: .2em;
+  @extend .sprite;
+  @include transition(all .1s linear);
+}
+
+.icon-gh { 
+  background-position: -53px -248px;
+}
+.icon-arrow-right {
+  background-position: -74px -246px;
+  margin-right: 0;
+}
+
+.icon-clipboard {
+  background-position: -31px -251px;
+  height: 20px;
+}
+
+.icon-gi-mark {
+  background-position: 0 -250px;
+  height: 27px;
+  width: 27px;
+}
+
+
