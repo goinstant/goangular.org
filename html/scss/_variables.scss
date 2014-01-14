@@ -24,3 +24,8 @@ $ultra:             900;
 
 //Layout
 $side-padding: 46px;
+
+//Grid
+$small-screen: new-breakpoint(max-width 945px);
+$tablet: new-breakpoint(max-width 768px);
+$mobile: new-breakpoint(max-width 740px);
