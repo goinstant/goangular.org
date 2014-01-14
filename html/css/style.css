@@ -710,6 +710,7 @@ header#hero {
       header#hero h2 {
         font-size: 1.2em; } }
   header#hero .button {
+    background-color: #1b5400;
     display: inline-block;
     padding: .2em .75em .3em;
     border-radius: 3px;
@@ -730,6 +731,8 @@ header#hero {
 
 .main-wrapper {
   margin-top: -11.5em;
+  margin-bottom: 5em;
+  border-radius: 0 0 5px 5px;
   padding: 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
   @media screen and (max-width: 740px) {
@@ -861,6 +864,15 @@ header#hero {
     margin: .4em 0;
     color: #585858; }
 
+.lt-ie9 .values li {
+  width: 30.75%; }
+  @media screen and (max-width: 740px) {
+    .lt-ie9 .values li {
+      float: none;
+      width: auto;
+      margin-bottom: 1em;
+      margin-right: 0; } }
+
 .well {
   border: 1px #a3c5e7;
   border-style: solid none;
@@ -967,6 +979,20 @@ header#hero {
     .tabs .tab [type=radio]:checked ~ label ~ .tab-content {
       z-index: 1; }
 
+.lt-ie9 .tabs {
+  min-height: none; }
+  .lt-ie9 .tabs .tab {
+    width: 100%; }
+    .lt-ie9 .tabs .tab > label {
+      border: 0;
+      padding: 0;
+      margin-bottom: .5em; }
+    .lt-ie9 .tabs .tab .tab-content {
+      position: relative;
+      top: auto;
+      margin-top: .5em;
+      margin-bottom: 1em; }
+
 .code-snip {
   position: relative; }
   .code-snip input[type="text"] {
@@ -995,6 +1021,24 @@ header#hero {
       opacity: .6; }
     .code-snip .copy-code-snip:hover i {
       opacity: .9; }
+    .code-snip .copy-code-snip:before {
+      opacity: 0;
+      content: 'Copy to clipboard';
+      position: absolute;
+      background: white;
+      top: 5px;
+      right: 39px;
+      padding: 3px 7px;
+      text-indent: 0;
+      font-size: .8em;
+      border-radius: 2px;
+      color: #0e1d2d;
+      pointer-events: none;
+      white-space: nowrap; }
+    .code-snip .copy-code-snip.zeroclipboard-is-hover:before {
+      opacity: 1; }
+    .code-snip .copy-code-snip.copied:before {
+      content: 'Copied!'; }
   .code-snip + label {
     display: block;
     margin-top: .75em;
@@ -1132,3 +1176,16 @@ header#hero {
     font-weight: 400;
     font-size: 1em;
     text-shadow: 0 1px 1px #0e1d2d; }
+
+.contact {
+  padding: 2em 46px;
+  border-top: 1px solid #ccc;
+  background: #eee;
+  font-size: .9em;
+  text-align: center; }
+  .contact span {
+    display: block;
+    margin-bottom: .5em; }
+  .contact p {
+    max-width: 65%;
+    margin: 0 auto; }

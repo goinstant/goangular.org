@@ -193,6 +193,7 @@ header#hero {
     }
   }
   .button {
+    background-color: darken($greenLight, 65%);
     @include button($greenLight, fade-out(green, .5), 1.2em);
     padding: .5em 1em .6em;
     margin-top: .3em;
@@ -205,6 +206,8 @@ header#hero {
 
 .main-wrapper {
   margin-top: -11.5em;
+  margin-bottom: 5em;
+  border-radius: 0 0 5px 5px;
   padding: 0;
   box-shadow: 0 0 5px fade-out(black, .8);
   @include media($mobile) {
@@ -322,6 +325,20 @@ header#hero {
   }
 }
 
+.lt-ie9 {
+  .values {
+    li {
+      width: 30.75%;
+      @include media($mobile) {
+        float: none;
+        width: auto;
+        margin-bottom: 1em;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .well {
   border: 1px $blueLight;
   border-style: solid none;
@@ -429,6 +446,26 @@ header#hero {
   }
 }
 
+.lt-ie9 {
+  .tabs {
+    min-height: none;
+    .tab {
+      width: 100%;
+      > label {
+        border: 0;
+        padding: 0;
+        margin-bottom: .5em;
+      }
+      .tab-content {
+        position: relative;
+        top: auto;
+        margin-top: .5em;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
 .code-snip {
   position: relative;
   input[type="text"] {
@@ -456,6 +493,28 @@ header#hero {
     }
     &:hover i {
       opacity: .9;
+    }
+    //Copied Notification
+    &:before {
+      opacity: 0;
+      content: 'Copy to clipboard';
+      position: absolute;
+      background: white;
+      top: 5px;
+      right: 39px;
+      padding: 3px 7px;
+      text-indent: 0;
+      font-size: .8em;
+      border-radius: 2px;
+      color: $navy;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    &.zeroclipboard-is-hover:before{
+      opacity: 1; 
+    }
+    &.copied:before {
+      content: 'Copied!';
     }
   }
   + label {
@@ -582,5 +641,21 @@ header#hero {
     font-weight: $regular;
     font-size: 1em;
     text-shadow: 0 1px 1px $navy;
+  }
+}
+
+.contact {
+  padding: 2em $side-padding;
+  border-top: 1px solid #ccc;
+  background: #eee;
+  font-size: .9em;
+  text-align: center;
+  span {
+    display: block;
+    margin-bottom: .5em;
+  }
+  p {
+    max-width: 65%;
+    margin: 0 auto;
   }
 }

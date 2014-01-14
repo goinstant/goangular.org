@@ -31,7 +31,7 @@
             <ul>
               <li><a href="#getting-started">Getting Started</a></li>
               <li><a href="#tutorials">Tutorials</a></li>
-              <li><a href="#example-apps">Example Apps</a></li>
+              <!-- <li><a href="#example-apps">Example Apps</a></li> -->
               <li><a href="https://developers.goinstant.com/v1/GoAngular/index.html" target="_blank">Documentation</a></li>
             </ul>
             <a href="https://github.com/goinstant/goangular" target="_blank"><i class="icon icon-gh"></i> View code on Github</a>
@@ -39,7 +39,7 @@
         </section>
       </div>
       <section class="hero-messaging">
-        <h1>AngularJS &plus; GoInstant</h1>
+        <h1>AngularJS &#43; GoInstant</h1>
         <h2>Focus on building your Angular application, we've got your back(end).</h2>
         <a href="#" class="button">Sign up with GoInstant to get started <i class="icon icon-arrow-right"></i></a>
       </section>
@@ -90,8 +90,8 @@
               <label for="tab-1">CDN Link</label>
               <div class="tab-content">
                 <div class="code-snip">
-                  <input type="text" readonly value='<script type="text/javacript" src="https://cdn.goinstant.net/integrations/goangular/latest/goangular.min.js"></script>'>
-                  <a href="#" class="copy-code-snip"><i class="icon icon-clipboard"></i></a>
+                  <input type="text" id="code-snip-1" readonly value='<script type="text/javacript" src="https://cdn.goinstant.net/integrations/goangular/latest/goangular.min.js"></script>'>
+                  <a href="#" class="copy-code-snip" data-clipboard-target="code-snip-1"><i class="icon icon-clipboard"></i></a>
                 </div>
                 <label><span>More Versions:</span> <a href="https://cdn.goinstant.net/integrations/goangular/latest/goangular.min.js" target="_blank">Production (min +gzip 64kb)</a> | <a href="https://cdn.goinstant.net/integrations/goangular/latest/goangular.js" target="_blank">Debug</a> | <a href="https://cdn.goinstant.net/" target="_blank">CDN Version Listing</a></label>
               </div>
@@ -101,8 +101,8 @@
               <label for="tab-2">Bower</label>
               <div class="tab-content">
                 <div class="code-snip">
-                  <input type="text" readonly value='bower install goangular'>
-                  <a href="#" class="copy-code-snip"><i class="icon icon-clipboard"></i></a>
+                  <input type="text" id="code-snip-2" readonly value='bower install goangular'>
+                  <a href="#" class="copy-code-snip" data-clipboard-target="code-snip-2"><i class="icon icon-clipboard"></i></a>
                 </div>
                 <label>As simple as that!</label>
               </div>
@@ -118,7 +118,7 @@
           <ul>
             <li><a href="#getting-started">Getting Started</a></li>
             <li><a href="#tutorials">Tutorials</a></li>
-            <li><a href="#example-apps">Example Apps</a></li>
+            <!-- <li><a href="#example-apps">Example Apps</a></li> -->
             <li><a href="https://developers.goinstant.com/v1/GoAngular/index.html" target="_blank">Documentation</a></li>
           </ul>
         </nav>
@@ -131,32 +131,25 @@
           </article>
           <article id="tutorials">
             <h2>Tutorials</h2>
-            <p>blah blah blah</p>
-            <h3>An h3 header</h3>
             <ul class="thumbs">
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
+              <li><a href="https://goinstant.com/blog/screencast-building-a-christmas-wishlist-with-goangular"><img src="img/tutorials/tutorial-wishlist.png" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
             </ul>
           </article>
-          <article id="example-apps">
+<!--           <article id="example-apps">
             <h2>Example Apps</h2>
             <ul class="thumbs">
               <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
-              <li><a href="#"><img src="http://placekitten.com/g/230/150" alt="Tutorial"><h4>Tutorial Name</h4></a></li>
             </ul>
-          </article>
+          </article> -->
         </section>
+      </div>
+      <div class="main contact">
+        <p><span><strong>&copy; 2014 GoInstant &ndash; a <a href="http://salesforce.com">Salesforce.com</a> company. </strong> <a href="https://github.com/goinstant/goangular/blob/master/LICENSE" target="_blank">View license</a></span>Help us make GoAngular exactly what you need by sending your feedback to <a href="mailto:mattcreager@goinstant.com">mattcreager@goinstant.com</a>, subscribe to our <a href="https://groups.google.com/forum/#!forum/goangular" target="_blank">mailing list</a>, or join us on IRC: <a href="irc://freenode/#goinstant">freenode/#goinstant</a></p>
       </div>
     </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
+    <script src="js/vendor/ZeroClipboard.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
