@@ -683,7 +683,17 @@ header#hero {
           float: right; } }
       @media screen and (max-width: 740px) {
         header#hero nav > a {
-          display: none; } }
+          color: transparent;
+          font: 0/0 a;
+          text-shadow: none;
+          float: none;
+          position: absolute;
+          height: 38px;
+          width: 38px;
+          right: 0;
+          top: 5px;
+          padding-top: 6px;
+          z-index: 0; } }
   header#hero .hero-messaging {
     padding-top: 1.5em;
     padding-bottom: 19em;

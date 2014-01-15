@@ -160,7 +160,15 @@ header#hero {
         float: right;
       }
       @include media($mobile) {
-        display: none;
+        @include hide-text();
+        float: none;
+        position: absolute;
+        height: 38px;
+        width: 38px;
+        right: 0;
+        top: 5px;
+        padding-top: 6px;
+        z-index: 0;
       }
     }
   }
