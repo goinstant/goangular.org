@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* normalize.css v1.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -747,7 +747,8 @@ header#hero {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
   @media screen and (max-width: 740px) {
     .main-wrapper {
-      margin-top: 0; } }
+      margin-top: 0;
+      margin-bottom: 0; } }
 
 .notice {
   padding: 1.5em 46px;
@@ -1193,9 +1194,15 @@ header#hero {
   background: #eee;
   font-size: .9em;
   text-align: center; }
+  @media screen and (max-width: 740px) {
+    .contact {
+      padding: 1em; } }
   .contact span {
     display: block;
     margin-bottom: .5em; }
   .contact p {
     max-width: 65%;
     margin: 0 auto; }
+    @media screen and (max-width: 740px) {
+      .contact p {
+        max-width: none; } }

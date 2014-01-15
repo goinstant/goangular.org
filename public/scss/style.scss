@@ -111,8 +111,8 @@ header#hero {
           position: absolute;
           top: -7px;
           left: 6px;
-          width: 0; 
-          height: 0; 
+          width: 0;
+          height: 0;
           border-left: 8px solid transparent;
           border-right: 8px solid transparent;
           border-bottom: 8px solid white;
@@ -220,6 +220,7 @@ header#hero {
   box-shadow: 0 0 5px fade-out(black, .8);
   @include media($mobile) {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -519,7 +520,7 @@ header#hero {
       white-space: nowrap;
     }
     &.zeroclipboard-is-hover:before{
-      opacity: 1; 
+      opacity: 1;
     }
     &.copied:before {
       content: 'Copied!';
@@ -658,6 +659,9 @@ header#hero {
   background: #eee;
   font-size: .9em;
   text-align: center;
+  @include media($mobile) {
+    padding: 1em;
+  }
   span {
     display: block;
     margin-bottom: .5em;
@@ -665,5 +669,8 @@ header#hero {
   p {
     max-width: 65%;
     margin: 0 auto;
+    @include media($mobile) {
+      max-width: none;
+    }
   }
 }
