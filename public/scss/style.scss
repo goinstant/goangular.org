@@ -156,6 +156,10 @@ header#hero {
       float: left;
       margin-top: -.35em;
       @include button();
+      padding: .15em .75em .35em .65em;
+      .icon {
+        top: 3px;
+      }
       @include media($small-screen) {
         float: right;
       }
@@ -602,6 +606,25 @@ header#hero {
     }
   }
 }
+
+.video-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 
 .thumbs {
   @include row();

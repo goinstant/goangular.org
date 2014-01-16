@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+/* normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -675,9 +675,12 @@ header#hero {
       text-decoration: none;
       text-align: center;
       line-height: 1.5;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      padding: .15em .75em .35em .65em; }
       header#hero nav > a:hover {
         background-color: #71afeb; }
+      header#hero nav > a .icon {
+        top: 3px; }
       @media screen and (max-width: 945px) {
         header#hero nav > a {
           float: right; } }
@@ -1130,6 +1133,22 @@ header#hero {
       font-weight: 600; }
     .content article a:hover {
       color: #59ce00; }
+
+.video-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .thumbs {
   *zoom: 1;
