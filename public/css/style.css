@@ -1191,6 +1191,13 @@ header#hero {
       background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(14, 29, 45, 0)), color-stop(100%, rgba(14, 29, 45, 0.7)));
       background-image: -webkit-linear-gradient(rgba(14, 29, 45, 0), rgba(14, 29, 45, 0.7));
       background-image: linear-gradient(rgba(14, 29, 45, 0), rgba(14, 29, 45, 0.7)); }
+    .thumbs li.coming-soon {
+      background: #f7f7f7; }
+      .thumbs li.coming-soon h4 {
+        text-shadow: none;
+        color: #999; }
+      .thumbs li.coming-soon:after {
+        display: none; }
   .thumbs a {
     display: block;
     width: 100%;

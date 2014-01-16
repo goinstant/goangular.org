@@ -656,6 +656,16 @@ header#hero {
       pointer-events: none;
       @include linear-gradient(fade-out($navy, 1), fade-out($navy, .3));
     }
+    &.coming-soon {
+      background: #f7f7f7;
+      h4 {
+        text-shadow: none;
+        color: #999;
+      }
+      &:after {
+        display: none;
+      }
+    }
   }
   a {
     display: block;
